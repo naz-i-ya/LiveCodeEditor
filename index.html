@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,16 @@
     <link rel="icon" type="image/x-icon" href="/images/fire.jpg">
     <title>
         FireCodeEditor(FCE)</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <link rel="icon" type="image/x-icon" href="https://cdn.imgbin.com/25/14/5/imgbin-flame-fire-logo-flame-L9Km2ycZWhAZVLRVEANAXVJVZ.jpg">
-    <link rel="stylesheet"  href="style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.imgbin.com/25/14/5/imgbin-flame-fire-logo-flame-L9Km2ycZWhAZVLRVEANAXVJVZ.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- <div class="editor">
         <textarea id="html-code"></textarea>
@@ -21,18 +27,51 @@
     </div>  -->
 
     <div class="editor-menu">
+  
         <button class="btn btn-dark">Dark Mode</button>
         <button class="btn btn-light">Light Mode</button>
         <button class="btn btn-run"><i class="fa fa-play"></i>Run</button>
-        <div class="live">
-            <label for="live">Live-</label>
-            <input type="checkbox" id="live">
-        </div>
+    
+        <button type="button" onclick="f1()" class=" shadow-sm btn btn-outline-secondary" data-toggle="tooltip"
+            data-placement="top" title="Bold Text">
+            Bold</button>
+        <button type="button" onclick="f2()" class="shadow-sm btn btn-outline-success" data-toggle="tooltip"
+            data-placement="top" title="Italic Text">
+            Italic</button>
+        <button type="button" onclick="f3()" class=" shadow-sm btn btn-outline-primary" data-toggle="tooltip"
+            data-placement="top" title="Left Align">
+            <i class="fas fa-align-left"></i></button>
+        <button type="button" onclick="f4()" class="btn shadow-sm btn-outline-secondary" data-toggle="tooltip"
+            data-placement="top" title="Center Align">
+            <i class="fas fa-align-center"></i></button>
+        <button type="button" onclick="f5()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip"
+            data-placement="top" title="Right Align">
+            <i class="fas fa-align-right"></i></button>
+        <button type="button" onclick="f6()" class="btn shadow-sm btn-outline-secondary" data-toggle="tooltip"
+            data-placement="top" title="Uppercase Text">
+            Upper Case</button>
+        <button type="button" onclick="f7()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip"
+            data-placement="top" title="Lowercase Text">
+            Lower Case</button>
+        <button type="button" onclick="f8()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip"
+            data-placement="top" title="Capitalize Text">
+            Capitalize</button>
+        <button type="button" onclick="f9()" class="btn shadow-sm btn-outline-primary side" data-toggle="tooltip"
+            data-placement="top" title="Tooltip on top">
+            Clear Text</button>
+            <div class="live">
+                <label for="live" class="liv">Live-</label>
+                <input type="checkbox" id="live">
+            </div>
+    </div>
+    </div>
+    </div>
+    <br>
     </div>
     <div class="container">
         <div class="left">
             <div class="editor" contentEditable="">
-               Play with Code....
+                Play with Code....
             </div>
         </div>
         <div class="bar" title="Click and Drag"></div>
@@ -41,7 +80,8 @@
         </div>
     </div>
     <script src="javascript.js">
-    
+
     </script>
 </body>
+
 </html>

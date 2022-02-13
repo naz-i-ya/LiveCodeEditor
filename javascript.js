@@ -23,15 +23,64 @@ const darkMode = document.querySelector('.btn-dark');
 const lightMode = document.querySelector('.btn-light');
 
 
+function f1() {
+    //function to make the text bold using DOM method
+    left.style.fontWeight = "bold";
+}
+
+function f2() {
+    //function to make the text italic using DOM method
+    left.style.fontStyle = "italic";
+}
+
+function f3() {
+    //function to make the text alignment left using DOM method
+    left.style.textAlign = "left";
+}
+
+function f4() {
+    //function to make the text alignment center using DOM method
+    left.style.textAlign = "center";
+}
+
+function f5() {
+    //function to make the text alignment right using DOM method
+    left.style.textAlign = "right";
+}
+
+function f6() {
+    //function to make the text in Uppercase using DOM method
+    left.style.textTransform = "uppercase";
+}
+
+function f7() {
+    //function to make the text in Lowercase using DOM method
+    left.style.textTransform = "lowercase";
+}
+
+function f8() {
+    //function to make the text capitalize using DOM method
+    left.style.textTransform = "capitalize";
+}
+
+function f9() {
+    //function to make the text back to normal by removing all the methods applied 
+    //using DOM method
+    left.style.fontWeight = "normal";
+    left.style.textAlign = "left";
+    left.style.fontStyle = "normal";
+    left.style.textTransform = "capitalize";
+    left.value = " ";
+}
 
 
 const drag = (e) => {
     e.preventDefault();
     document.selection ? document.selection.empty() :
-    window.getSelection().removeAllRanges();
+        window.getSelection().removeAllRanges();
 
     left.style.width = (e.pageX - bar.offsetWidth / 3)
-    + "px";
+        + "px";
     editor.resize();
 }
 
@@ -68,11 +117,11 @@ lightMode.addEventListener('click', () => {
 });
 
 //Live Code
-document.getElementById('live').onclick = function() {
-    if(this.checked){
-         editor.addEventListener('keyup', () => {
-        const html = editor.textContent;
-        iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
-         })
-        }
+document.getElementById('live').onclick = function () {
+    if (this.checked) {
+        editor.addEventListener('keyup', () => {
+            const html = editor.textContent;
+            iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
+        })
+    }
 }

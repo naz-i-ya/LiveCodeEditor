@@ -18,7 +18,30 @@ html{
     padding: 5px 0 5px 10px;
 }
 
-.btn{
+
+button {
+    margin: 10px;
+    border-color: #957dad !important;
+    color: #888888 !important;
+    margin-bottom: 25px;
+}
+  
+button:hover {
+    background-color: #fec8d8 !important;
+}
+  
+textarea {
+    padding: 3%;
+    border-color: #957dad;
+    border-width: thick;
+}
+  
+.flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+/* .btn{
     border: none;
     outline: none;
     cursor: pointer;
@@ -29,7 +52,7 @@ html{
     font-size: 1.6rem;
     margin-right: 10px;
     min-width: 5rem;
-}
+} */
 
 .fa{
     padding-right: .6rem;
@@ -43,12 +66,16 @@ html{
 .live{
     font-size: 1.6em;
     font-weight: bold;
-    border: 2px solid #e25822;
-    padding: .55rem;
+    border: 2px solid 	#42ba96;
+    padding: .3rem .55rem;
     display: flex;
     align-items: center;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.liv{
+   margin-top: 1rem;
 }
 
 .live > *{
