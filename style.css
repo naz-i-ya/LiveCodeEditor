@@ -22,7 +22,7 @@ html{
     border: none;
     outline: none;
     cursor: pointer;
-    background: brown;
+    background: #e25822;
     color: #ffff;
     padding: 8px 15px;
     border-radius: 3px;
@@ -31,14 +31,19 @@ html{
     min-width: 5rem;
 }
 
+.fa{
+    padding-right: .6rem;
+}
+
 .btn:hover {
-    background: cadetblue;
+    background: #FEDE17;
+    color: black;
 }
 
 .live{
     font-size: 1.6em;
     font-weight: bold;
-    border: 2px solid cadetblue;
+    border: 2px solid #e25822;
     padding: .55rem;
     display: flex;
     align-items: center;
@@ -69,7 +74,7 @@ html{
     width: 4px;
     height: 100%;
     background: #eee;
-    cursor: pointer;
+    cursor: w-resize;
 }
 
 .right{
