@@ -23,47 +23,47 @@ const darkMode = document.querySelector('.btn-dark');
 const lightMode = document.querySelector('.btn-light');
 
 
-function f1() {
+const f1 = () => {
     //function to make the text bold using DOM method
     left.style.fontWeight = "bold";
 }
 
-function f2() {
+const f2 = () => {
     //function to make the text italic using DOM method
     left.style.fontStyle = "italic";
 }
 
-function f3() {
+const f3 = () => {
     //function to make the text alignment left using DOM method
     left.style.textAlign = "left";
 }
 
-function f4() {
+const f4 = () => {
     //function to make the text alignment center using DOM method
     left.style.textAlign = "center";
 }
 
-function f5() {
+const f5 = () => {
     //function to make the text alignment right using DOM method
     left.style.textAlign = "right";
 }
 
-function f6() {
+const f6 = ()  => {
     //function to make the text in Uppercase using DOM method
     left.style.textTransform = "uppercase";
 }
 
-function f7() {
+const f7 = () => {
     //function to make the text in Lowercase using DOM method
     left.style.textTransform = "lowercase";
 }
 
-function f8() {
+const f8 = () => {
     //function to make the text capitalize using DOM method
     left.style.textTransform = "capitalize";
 }
 
-function f9() {
+const f9 = () => {
     //function to make the text back to normal by removing all the methods applied 
     //using DOM method
     left.style.fontWeight = "normal";
